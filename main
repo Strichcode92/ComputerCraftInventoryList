@@ -1,2 +1,14 @@
 local monitor = peripheral.find("monitor")
+local speaker = peripheral.find("speaker")
+
+monitor.clear()
+monitor.setCursorPos(1,1)
+speaker.playSound("entity.creeper.primed")
 monitor.write("Ein kleiner Test ob es so funktioniert")
+
+sleep(10)
+
+speaker.playSound("entity.generic.explode")
+
+monitor.write("Willkommen bei der Inventar Anzeige. Welches Item möchten Sie wissen?")
+sleep(10)
